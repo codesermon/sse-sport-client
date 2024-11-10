@@ -11,7 +11,7 @@ const SSEContextProvider = (props: any) => {
   const [eventSource, setEventSource] = useState<EventSource | null>(null);
 
   useEffect(() => {
-    let sseSource = new EventSource(
+    const sseSource = new EventSource(
       `${String(process.env.NEXT_PUBLIC_API_URL)}/stream`,
       { withCredentials: true,  }
     );

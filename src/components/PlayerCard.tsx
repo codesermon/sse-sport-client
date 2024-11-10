@@ -136,4 +136,6 @@ const PlayerCard = React.forwardRef(
   }
 );
 
+PlayerCard.displayName = "PlayerCard"
+
 export default PlayerCard;
